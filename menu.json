@@ -1,0 +1,33 @@
+{
+    "menu": [
+      {
+        "id": "1",
+        "nombre": "Inicio",
+        "enlace": "#inicio",
+        "icono": "fa-house"
+      },
+      {
+        "id": "2",
+        "nombre": "Productos",
+        "enlace": "#",
+        "icono": "fa-wallet",
+        "submenus": [
+          {"nombre": "Capital Líquido", "enlace": "#cuentas"},
+          {"nombre": "Tarjetas de Crédito", "enlace": "#tarjetas"},
+          {"nombre": "Préstamos", "enlace": "#prestamos"}
+        ]
+      },
+      {
+        "id": "3",
+        "nombre": "Presupuesto",
+        "enlace": "#presupuesto",
+        "icono": "fa-chart-pie"
+      },
+      {
+        "id": "4",
+        "nombre": "Atención al Cliente",
+        "enlace": "#contacto",
+        "icono": "fa-headset"
+      }
+    ]
+  }

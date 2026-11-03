@@ -1,0 +1,44 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, sans-serif; }
+body { background-color: #f4f6f9; color: #333; }
+.container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+
+.main-header { background: #0b3c5d; color: #fff; padding: 15px 0; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+.header-flex { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px; }
+.logo-area { display: flex; align-items: center; gap: 12px; }
+.bank-logo { width: 45px; height: 45px; border-radius: 50%; border: 2px solid #e5a93b; object-fit: cover; }
+.logo-area h1 { font-size: 20px; color: #fff; letter-spacing: 0.5px; }
+
+/* MENÚ DINÁMICO */
+.dynamic-nav ul { display: flex; list-style: none; gap: 10px; align-items: center; flex-wrap: wrap; }
+.dynamic-nav li { position: relative; }
+.dynamic-nav a { color: #fff; text-decoration: none; padding: 8px 14px; display: block; font-size: 14px; font-weight: 600; border-radius: 4px; transition: background 0.2s; }
+.dynamic-nav a:hover { background-color: #005b94; }
+
+/* Submenús */
+.submenu { display: none; position: absolute; top: 100%; left: 0; background: #fff; min-width: 160px; box-shadow: 0 4px 10px rgba(0,0,0,0.15); border-radius: 4px; list-style: none; z-index: 10; }
+.submenu li a { color: #333; padding: 10px; }
+.submenu li a:hover { background-color: #f0f0f0; color: #0b3c5d; }
+.has-submenu:hover .submenu { display: block; }
+
+/* CONTENIDO */
+.main-content { padding: 30px 0; }
+.hero { background: #fff; padding: 25px; border-radius: 8px; margin-bottom: 25px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+.hero h2 { color: #0b3c5d; margin-bottom: 10px; }
+
+/* PANEL ADMIN */
+.admin-panel { background: #fff; padding: 25px; border-radius: 8px; margin-bottom: 25px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); border-left: 4px solid #e5a93b; }
+.admin-panel h3 { margin-bottom: 15px; color: #0b3c5d; font-size: 18px; }
+.form-group { display: flex; gap: 10px; flex-wrap: wrap; }
+.form-group input { flex: 1; min-width: 200px; padding: 10px; border: 1px solid #ccc; border-radius: 4px; }
+.btn-add { background-color: #e5a93b; color: #2b1d0c; border: none; padding: 10px 20px; font-weight: bold; border-radius: 4px; cursor: pointer; transition: background 0.2s; }
+.btn-add:hover { background-color: #d49a31; }
+
+/* SECCIÓN TEÓRICA */
+.theory-section h3 { color: #0b3c5d; margin-bottom: 15px; font-size: 18px; }
+.theory-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 15px; }
+.theory-card { background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); border-top: 3px solid #005b94; }
+.theory-card h4 { color: #0b3c5d; margin-bottom: 8px; }
+.theory-card p { font-size: 13px; color: #555; line-height: 1.4; }
+
+/* FOOTER */
+.site-footer { text-align: center; padding: 20px 0; background: #1a252c; color: #aaa; font-size: 13px; margin-top: 40px; }

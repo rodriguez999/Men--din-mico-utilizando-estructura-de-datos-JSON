@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco Pesitos - Menú Dinámico</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- CABECERA -->
+    <header class="main-header">
+        <div class="container header-flex">
+            <div class="logo-area">
+                <img src="logoPeosos.jpg" alt="Logo" class="bank-logo">
+                <h1>BANCO PESITOS</h1>
+            </div>
+            <!-- MENÚ DINÁMICO SE INYECTA AQUÍ MEDIANTE JS -->
+            <nav id="menu-container" class="dynamic-nav">
+                <!-- Se llena dinámicamente -->
+            </nav>
+        </div>
+    </header>
+
+    <main class="container main-content">
+        <!-- SECCIÓN PRINCIPAL -->
+        <section class="hero">
+            <h2>Panel de Administración de Menú Dinámico</h2>
+            <p>Este menú se genera automáticamente a partir de una estructura de datos externa (JSON). Puedes agregar nuevas opciones abajo sin tocar el código fuente.</p>
+        </section>
+
+        <!-- PANEL PARA AGREGAR OPCIONES AL MENÚ (Requerimiento Funcional) -->
+        <section class="admin-panel">
+            <h3><i class="fa-solid fa-plus-circle"></i> Agregar Nueva Opción al Menú</h3>
+            <form id="menu-form">
+                <div class="form-group">
+                    <input type="text" id="nombre-opcion" placeholder="Nombre de la opción (ej. Inversiones)" required>
+                    <input type="text" id="enlace-opcion" placeholder="Enlace (ej. #inversiones)" required>
+                    <button type="submit" class="btn-add">Agregar al Menú</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- SECCIÓN TEÓRICA (Cumplimiento de Requerimiento 7: API, REST, SOAP, JSON, XML, GraphQL) -->
+        <section class="theory-section">
+            <h3>Conceptos Clave de Intercambio de Datos entre Sistemas</h3>
+            <div class="theory-grid">
+                <div class="theory-card">
+                    <h4>API</h4>
+                    <p>Interfaz de Programación de Aplicaciones. Permite que diferentes software se comuniquen entre sí.</p>
+                </div>
+                <div class="theory-card">
+                    <h4>REST</h4>
+                    <p>Estilo arquitectónico para servicios web basado en HTTP, ideal para aplicaciones web modernas y escalables.</p>
+                </div>
+                <div class="theory-card">
+                    <h4>SOAP</h4>
+                    <p>Protocolo basado en XML, altamente estructurado y seguro, utilizado comúnmente en entornos empresariales.</p>
+                </div>
+                <div class="theory-card">
+                    <h4>JSON</h4>
+                    <p>Formato ligero de intercambio de datos basado en texto, fácil de leer y procesar por los navegadores.</p>
+                </div>
+                <div class="theory-card">
+                    <h4>XML</h4>
+                    <p>Lenguaje de marcado robusto y estructurado en etiquetas, tradicionalmente usado en sistemas corporativos.</p>
+                </div>
+                <div class="theory-card">
+                    <h4>GraphQL</h4>
+                    <p>Lenguaje de consulta para APIs creado por Meta, que permite solicitar exactamente los datos necesarios.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Banco Pesitos - Desarrollado por Bryan Rodriguez Abad (100523553)</p>
+    </footer>
+
+    <!-- Enlace al archivo de lógica JavaScript -->
+    <script src="app.js"></script>
+</body>
+</html>
